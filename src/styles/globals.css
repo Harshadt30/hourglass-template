@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header.open nav {
+  display: flex;
+}
+header.open .header-extra {
+  display: block;
+}

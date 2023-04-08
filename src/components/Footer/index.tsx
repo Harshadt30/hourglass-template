@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Container from "@components/Container";
+import Logo from "@components/Logo";
 import {
   EMAIL_PLACEHOLDER,
   EMAIL_SUB_TITLE,
@@ -15,18 +16,7 @@ const Footer = (props: {}) => {
       <Container>
         <div className={`border-t border-b py-12 md:py-16 lg:flex`}>
           <div className="col lg:flex-1">
-            <Link href="/" className={`inline-flex items-center`}>
-              <img
-                className={`max-h-[44px]`}
-                src="/images/logo.png"
-                alt="Hourglass"
-              />
-              <h3
-                className={`max-h-[44px] ml-6 font-bold text-xl text-accentColor`}
-              >
-                {SITE_NAME}
-              </h3>
-            </Link>
+            <Logo />
             <div className="footer-links-wrapper mt-8 flex flex-wrap gap-y-3 lg:gap-x-8">
               {FOOTER_LINKS.map(({ href, title, id }) => (
                 <Link

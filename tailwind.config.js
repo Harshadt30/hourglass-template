@@ -18,6 +18,8 @@ module.exports = {
         marbleBlue: "#667085",
         coolGray: "#98A2B3",
         lightPurple: "#E9D7FE",
+        blackPearl: "#101828",
+        ghostWhite: "#F9FAFB",
       },
       boxShadow: {
         nomal: "0px 1px 2px 0px #1018280D",

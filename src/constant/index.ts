@@ -11,6 +11,14 @@ interface Clients {
   mobileOnly?: boolean;
 }
 
+interface AboutServices {
+  id: number;
+  src: string;
+  alt: string;
+  heading: string;
+  subHeading: string;
+}
+
 interface HeaderLinks extends FooterLinks {
   subLinks?: Array<FooterLinks>;
 }
@@ -136,5 +144,24 @@ export const CLIENTS: Clients[] = [
     alt: "Hourglass",
     src: "/images/company-logo-hourglass.png",
     mobileOnly: true,
+  },
+];
+
+export const AboutUs: AboutServices[] = [
+  {
+    id: 1,
+    src: "/images/message-chat-circle.png",
+    alt: "chats",
+    heading: " Share team inboxes",
+    subHeading:
+      "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+  },
+  {
+    id: 2,
+    src: "/images/zap.png",
+    alt: "instant answer",
+    heading: "Deliver instant answers",
+    subHeading:
+      "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
   },
 ];

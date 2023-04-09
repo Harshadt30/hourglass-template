@@ -21,11 +21,17 @@ const Banner = (props: Props) => {
           />
         </div>
         <div className="bnts-wrapper mt-8 md:mt-12 flex flex-col md:flex-row gap-3">
-          <button className="text-accentColor text-lg justify-center items-center inline-flex py-4 px-7 shadow-nomal bg-[#F9F5FF] gap-3.5 rounded-lg">
+          <button
+            title="Showreel"
+            className="text-accentColor text-lg justify-center items-center inline-flex py-4 px-7 shadow-nomal bg-[#F9F5FF] gap-3.5 rounded-lg hover:opacity-90"
+          >
             <img src="/images/play-circle.png" alt="play" />
             <span> Showreel</span>
           </button>
-          <button className="bg-accentColor text-white text-lg py-4 px-7 shadow-nomal rounded-lg">
+          <button
+            title="Get in touch"
+            className="bg-accentColor text-white text-lg py-4 px-7 shadow-nomal rounded-lg hover:opacity-90"
+          >
             Get in touch
           </button>
         </div>
@@ -34,11 +40,13 @@ const Banner = (props: Props) => {
             className="hidden md:block"
             src={"/images/hero-image.jpg"}
             alt="Hero image"
+            title="Hourglass"
           />
           <img
             className="block md:hidden"
             src={"/images/hero-image-sm.png"}
             alt="Hero image"
+            title="Hourglass"
           />
         </div>
         <Clients />

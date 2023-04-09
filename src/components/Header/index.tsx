@@ -32,7 +32,8 @@ const Header = (props: {}) => {
               <Link
                 key={id}
                 href={href}
-                className="link-wrapper inline-flex items-center text-base"
+                className="link-wrapper inline-flex items-center text-base hover:opacity-80"
+                title={title}
               >
                 <span>{title}</span>
                 {subLinks && (
@@ -46,12 +47,17 @@ const Header = (props: {}) => {
             ))}
           </nav>
           <div className="header-extra hidden md:ml-auto  md:block mt-8 md:mt-0">
-            <Link href="/support" className="text-white">
+            <Link
+              href="/support"
+              className="text-white  hover:opacity-80"
+              title="Support"
+            >
               Suppport
             </Link>
             <Link
               href="/sales"
-              className="ml-[30px] py-2.5 px-[18px] rounded-lg bg-accentColor text-white border border-accentColor shadow-nomal"
+              title="Talk to sales"
+              className="ml-[30px] py-2.5 px-[18px] rounded-lg bg-accentColor text-white border border-accentColor shadow-nomal  hover:opacity-80"
             >
               Talk to sales
             </Link>

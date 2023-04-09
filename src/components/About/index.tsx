@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Container from "@components/Container";
 import { AboutUs } from "@constant/index";
-import Image from "next/image";
 
 type Props = {};
 

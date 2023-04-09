@@ -44,7 +44,7 @@ const Footer = (props: {}) => {
                 />
                 <button
                   type="submit"
-                  className="w-full lg:w-auto mt-4 lg:mt-0 text-white bg-accentColor rounded-lg lg:ml-4 py-2.5 px-[18px] shadow-nomal"
+                  className="w-full lg:w-auto mt-4 lg:mt-0 text-white bg-accentColor rounded-lg lg:ml-4 py-2.5 px-[18px] shadow-nomal hover:opacity-90"
                 >
                   Subscribe
                 </button>

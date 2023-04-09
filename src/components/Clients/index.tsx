@@ -15,7 +15,7 @@ const Clients = (props: Props) => {
             key={id}
             className={`md:w-4/5 ${mobileOnly ? "block md:hidden" : ""}`}
           >
-            <img src={src} alt={alt} />
+            <img src={src} alt={alt} title={alt} />
           </div>
         ))}
       </div>
